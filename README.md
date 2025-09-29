@@ -22,6 +22,11 @@ TECHNICAL ASPECT OF GAME
         Pros: Native look great text rendering, high-DPI, easy menys/dialogs, first-class packaging tools.
         Packaging: (windeployqt for windows)
 
+COOL FUNCTIONALITY
+    - If player wants, game can solve board for them with a valid solution.
+    - Player can request hints which are valid in the final solution.
+    - Players can choose a difficulty out of the following 5: beginner, easy, medium, hard, expert.
+
 PROJECT STRUCTURE
     /app    -> main(), DI/Wiring, settings, resources
     /core   -> pure C++: Board, Rules, Solver, Generator, Gamestate, Persistance
@@ -30,6 +35,11 @@ PROJECT STRUCTURE
 
 This project uses the Qt framework under the LGPL license
 
-TO BE INCLUDED IN FUTURE:
+TO BE INCLUDED IN COMMING VERSIONS:
+    - Fully functional new board button.
     - The player should be able to save the current state and then reopen and continue upon closing. 
     - Unit tests: GoogleTest, /tests  -> unit + property tests.
+    - Time constrained boards.
+    - Fully capable storage for entire player history with statistics to go along. 
+    - Pattern based boards which are tied to difficulties.
+    
